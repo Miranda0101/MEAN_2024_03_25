@@ -1,0 +1,45 @@
+<div>
+    <label>Search: </label>
+    <input type="text" [(ngModel)]="keyword">
+</div>
+
+<table>
+  <ng-container *ngIf="products.length; else noProduct">
+    <th>ID</th>
+    <th>Title</th>
+    <th>Price</th>
+    <th>Date</th>
+    <th>Stock</th>
+    <!-- </ng-container>
+    <ng-container *ngIf="products.length"> -->
+    <tr *ngFor="let product of products | myFirst: keyword" appMyFirst>
+      <td>{{ product.id }}</td>
+      <td>{{ product.title }}</td>
+      <td>{{ product.price | currency: 'USD' : 'code'}}</td>
+      <td>{{ product.date | date: 'long' | uppercase}}</td>
+      <td [ngSwitch]="product.quantity">
+        <p *ngSwitchCase="10">Low stock</p>
+        <p *ngSwitchCase="5">Low stock</p>
+        <p *ngSwitchDefault>Enough</p>
+      </td>
+    </tr>
+  </ng-container>
+</table>
+<ng-template #noProduct>
+  <p>No data to display</p>
+</ng-template>
+
+<div [ngClass]="'red-class'">ngClass Usage</div>
+<div [ngStyle]="{ 'font-size': '36px', 'font-family': 'arial' }">
+  ngStyle Usage
+</div>
+<!-- Tenary operator: condition ? actionTrue : actionFalse -->
+<p
+  [ngStyle]="
+    red ? { color: 'red' } : green ? { color: 'green' } : { color: 'yellow' }
+  "
+>
+  Change Style
+</p>
+
+<p [ngClass]="red ? 'red-class' : 'green-class'">Change Class</p>
