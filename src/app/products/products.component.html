@@ -2,9 +2,9 @@
     <label>Search: </label>
     <input type="text" [(ngModel)]="keyword">
 </div>
-
-<table>
-  <ng-container *ngIf="products.length; else noProduct">
+<button (click)="getAllProducts()">Click here to get all products</button>
+<table *ngIf="products.length; else noProduct">
+  <ng-container >
     <th>ID</th>
     <th>Title</th>
     <th>Price</th>

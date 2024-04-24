@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ProductsService } from '../products/products.service';
 
 @Component({
   selector: 'app-home',
@@ -12,6 +13,8 @@ export class HomeComponent {
   temp = '<p>Inner HTML</p>';
 
   name: string = "Emily";
+
+  constructor(private dataService: ProductsService){}
 
   clear() {
     this.username = '';
@@ -36,5 +39,16 @@ export class HomeComponent {
       'Input event triggered',
       (<HTMLInputElement>event.target).value
     );
+  }
+
+  addNewProduct(){
+    console.log("adding new product")
+    this.dataService.setData = {
+      id: '04-24-2024',
+    title: 'Nails',
+    price: 0.99,
+    date: new Date(2024,2,24),
+    quantity: 40,
+    }
   }
 }

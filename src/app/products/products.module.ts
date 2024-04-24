@@ -4,6 +4,7 @@ import { ProductsComponent } from './products.component';
 import { MyFirstDirective } from './my-first.directive';
 import { MyFirstPipe } from './my-first.pipe';
 import { FormsModule } from '@angular/forms';
+import { ProductsService } from './products.service';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { FormsModule } from '@angular/forms';
   ],
   exports:[
     ProductsComponent
-  ]
+  ],
+  providers:[]
 })
 export class ProductsModule { }
