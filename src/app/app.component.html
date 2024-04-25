@@ -1,8 +1,10 @@
 <!-- <app-home></app-home>
 <app-products></app-products> -->
-<!-- <app-parent></app-parent> -->
+<app-parent [nums]="newNums" [num]="newNum"></app-parent>
+<button (click)="addOne()">Add 1</button>
+<button (click)="addItem()">Add item</button>
 <h1>Routing</h1>
 <button routerLink="home">Home</button>
 <button routerLink="products">Products</button>
 <button (click)="gotoParent()">Parent and Child</button>
-<router-outlet></router-outlet>
+<!-- <router-outlet></router-outlet> -->

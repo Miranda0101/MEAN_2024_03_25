@@ -8,10 +8,20 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
   title = 'MEAN_2024_03_25';
-
+  newNum = 10;
+  newNums = [1, 2, 3]
   constructor(private router: Router){}
 
   gotoParent(){
     this.router.navigate(["parent"])
+  }
+
+  addOne(){
+    this.newNum++;
+  }
+  addItem(){
+    // this.newNums.push(this.newNums.length + 1);
+    this.newNums = [...this.newNums, this.newNums.length + 1];
+    console.log(this.newNums)
   }
 }
