@@ -3,9 +3,8 @@
 ### This is a general description about what you should do. The team lead should write the detailed tickets and assign them to team members. The Jira board will be checked during code review.
 ## Team Assignments (Finish as a team)
 ### Apr. 26
-1. Link: https://github.com/JRAntra/AngularTrainingBackEnd. Clone this repo to your local.
-2. Create a service to retrieve data from server, and display it on NewsFeed page. API used: http://localhost:4231/api/news
-3. Create a service to retrieve user information and display it on Admin page. API used: http://localhost:4231/api/users/getAllUsers
+1. Create a service to retrieve data from server, and display it on NewsFeed page. API used: https://jsonplaceholder.typicode.com/posts
+2. Create a service to retrieve user information and display it on Admin page. API used: https://dummyjson.com/posts
 
 
 ### Apr. 25
