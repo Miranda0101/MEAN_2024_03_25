@@ -8,20 +8,23 @@ import { ProductsModule } from './products/products.module';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './parent/child/child.component';
 import { ProductsService } from './products/products.service';
-
+import { UserComponent } from './user/user.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     ParentComponent,
     ChildComponent,
+    UserComponent,
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HomeModule,
-    ProductsModule
+    ProductsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

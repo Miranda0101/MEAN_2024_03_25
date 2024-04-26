@@ -2,6 +2,12 @@
 
 ### This is a general description about what you should do. The team lead should write the detailed tickets and assign them to team members. The Jira board will be checked during code review.
 ## Team Assignments (Finish as a team)
+### Apr. 26
+1. Link: https://github.com/JRAntra/AngularTrainingBackEnd. Clone this repo to your local.
+2. Create a service to retrieve data from server, and display it on NewsFeed page. API used: http://localhost:4231/api/news
+3. Create a service to retrieve user information and display it on Admin page. API used: http://localhost:4231/api/users/getAllUsers
+
+
 ### Apr. 25
 1. Routing system for all modules with path. Create navigation bar that can navigate to different pages.
 ### Apr. 24
