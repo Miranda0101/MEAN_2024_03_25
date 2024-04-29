@@ -2,9 +2,26 @@
 
 ### This is a general description about what you should do. The team lead should write the detailed tickets and assign them to team members. The Jira board will be checked during code review.
 ## Team Assignments (Finish as a team)
+### Apr. 29
+1. Use Reactive Forms to bind all the input fields in Login Page, Register Page and Profile Page
+2. Create a service which enables user to register for a new account with correct information. Check the server code to learn which model you need to use as http request body
+    * API: http://localhost:4231/api/register/createNewAccountAPI 
+    * API Method: post
+    * Check the server code to learn which model you need to use as http request body
+3. Create a service which enables user to login only with the correct combination. Check the server code to learn which model you need to use as http request body
+    * API: http://localhost:4231/api/login
+    * API Method: post
+4. Create a service which enable user to post a new story. Check the server code to learn which model you need to use as http request body
+    * API: http://localhost:4231/api/news
+    * API Method: post
+5. Create a service which enable user to post new comments in story. Check the server code to learn which model you need to use as http request body
+    * API: http://localhost:4231/api/news/addComment/:id
+    * API Method: post
+    
 ### Apr. 26
-1. Create a service to retrieve data from server, and display it on NewsFeed page. API used: https://jsonplaceholder.typicode.com/posts
-2. Create a service to retrieve user information and display it on Admin page. API used: https://dummyjson.com/posts
+1. Please clone the backend repo from [AngularTrainingBackEnd](https://github.com/JRAntra/AngularTrainingBackEnd.git)
+2. Create a service to retrieve data from server, and display it on NewsFeed page. API used: http://localhost:4231/api/users/getAllUsers
+3. Create a service to retrieve user information and display it on Admin page. API used: http://localhost:4231/api/news
 
 
 ### Apr. 25
