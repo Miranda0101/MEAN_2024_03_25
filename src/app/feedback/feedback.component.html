@@ -1,0 +1,20 @@
+<form [formGroup]="messageForm">
+  <label>Username: </label>
+  <input formControlName="username" />
+  <p *ngIf="contactForm.controls['username'].pristine">This username field has not been modified yet</p>
+  <label>Email: </label>
+  <input formControlName="email" />
+  <p *ngIf="emailControl?.untouched">This email field has not been interacted with</p>
+  <p *ngIf="emailControl.errors.required">The email field is required</p>
+  <p *ngIf="emailControl.errors.email">Incorrect email address</p>
+  <div formArrayName="topics">
+    <div *ngFor="let control of topicControls?.controls; let i = index" >
+        <input type="radio" formControlName="{{i}}"/>{{ topicList[i].name }}
+    </div> 
+  </div>
+
+
+  <label>Message: </label>
+  <textarea formControlName="message"></textarea>
+  <button type="submit" (click)="onClick()">Submit</button>
+</form>

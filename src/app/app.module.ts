@@ -10,6 +10,8 @@ import { ChildComponent } from './parent/child/child.component';
 import { ProductsService } from './products/products.service';
 import { UserComponent } from './user/user.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FeedbackComponent } from './feedback/feedback.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,7 @@ import { HttpClientModule } from '@angular/common/http';
     ParentComponent,
     ChildComponent,
     UserComponent,
+    FeedbackComponent,
     
   ],
   imports: [
@@ -25,6 +28,7 @@ import { HttpClientModule } from '@angular/common/http';
     HomeModule,
     ProductsModule,
     HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
