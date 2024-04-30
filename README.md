@@ -2,6 +2,18 @@
 
 ### This is a general description about what you should do. The team lead should write the detailed tickets and assign them to team members. The Jira board will be checked during code review.
 ## Team Assignments (Finish as a team)
+### Apr. 30
+1. Create Validators for Login Page
+    * Create Custom Async Validator for Username field. If username is not existed, display error message 
+        * API: http://localhost:4231/api/register/checkExistByUsername/:username
+    * Password should have minimum length of 8
+2. Create Validators for Register Page
+    * Create Custom Async Validator for Username field. If username is not existed, display error message.
+        * API: http://localhost:4231/api/register/checkExistByUsername/:username
+    * Create Custom Async Validator for Email field. If email is already used, display error message
+        * API: http://localhost:4231/api/register/checkExistByEmail/:userEmail
+    * Password must have at least 1 uppercase, 1 lowercase, 1 special character
+    * Password confirm should have exact the same input as Password Field, display error message if not. Display error if password is too short
 ### Apr. 29
 1. Use Reactive Forms to bind all the input fields in Login Page, Register Page and Profile Page
 2. Create a service which enables user to register for a new account with correct information. Check the server code to learn which model you need to use as http request body
