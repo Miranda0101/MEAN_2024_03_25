@@ -44,6 +44,12 @@
 
 
 ## Individual Assignments (Everyone should do)
+### May 1
+1. Create LikeList Component and display likedList with custom pipe
+    * Create LikeList Component according to your UI design
+    * LikeList can be stored locally (it will become empty when refresh the page)
+    * When user click "Like List" button, it will display/hide the LikeList Component
+    * The custom pipe should take string as input, and output only the first 20 characters. If the input is more than 20 characters, display "..." at the end of the converted string
 ### Apr. 24
 1. Create a custom directive that will auto hide the element after 5 seconds. When applying the directive to a host element, the host element will disappear after 5 seconds after the component has been initialized
 2. Create custom pipe which will display only the first 20 characters of a string; if length is greater than 20 characters, add “…“ after the sub string
