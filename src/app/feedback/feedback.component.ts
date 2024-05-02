@@ -65,7 +65,8 @@ export class FeedbackComponent implements OnInit {
   // async validator
   nameExists(): AsyncValidatorFn {
     return (control: AbstractControl): Observable<ValidationErrors | null> =>{
-      return of(this.userList.includes(control.value)).pipe(map((usernameExist)=>{
+      return of(this.userList.includes(control.value)).pipe(
+        map((usernameExist)=>{
         return usernameExist ? null : { userDoesNotExist: true }
       }))
     }
