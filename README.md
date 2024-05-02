@@ -44,6 +44,11 @@
 
 
 ## Individual Assignments (Everyone should do)
+### May 2
+1. Create a Router Guard that prevent users from visiting Admin Page if they are not with an Admin Role
+    * When successfully login, you will receive your user info token from the respond of the Api. Save user role information in localStorage
+
+    * Create a Router Guard that use the user role from localStorage to decide whether user can access Admin page or not. If is “admin“, then yes;if is “user“, then no.   
 ### May 1
 1. Create LikeList Component and display likedList with custom pipe
     * Create LikeList Component according to your UI design
