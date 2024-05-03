@@ -17,7 +17,7 @@
 ### Apr. 29
 1. Use Reactive Forms to bind all the input fields in Login Page, Register Page and Profile Page
 2. Create a service which enables user to register for a new account with correct information. Check the server code to learn which model you need to use as http request body
-    * API: http://localhost:4231/api/register/createNewAccountAPI 
+    * API: http://localhost:4231/api/register/createNewAccount 
     * API Method: post
     * Check the server code to learn which model you need to use as http request body
 3. Create a service which enables user to login only with the correct combination. Check the server code to learn which model you need to use as http request body

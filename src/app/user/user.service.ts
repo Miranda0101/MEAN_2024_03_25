@@ -7,6 +7,7 @@ import { User } from './users.model';
   providedIn: 'root'
 })
 export class UserService {
+  userRole: string = 'admin';
   // HTTPClient
   constructor(private http: HttpClient) { }
 
