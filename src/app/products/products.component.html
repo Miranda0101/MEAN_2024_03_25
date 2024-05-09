@@ -10,8 +10,8 @@
     <th>Price</th>
     <th>Date</th>
     <th>Stock</th>
-    <!-- </ng-container>
-    <ng-container *ngIf="products.length"> -->
+    </ng-container>
+    <ng-container *ngIf="products.length"> 
     <tr *ngFor="let product of products | myFirst: keyword" appMyFirst>
       <td>{{ product.id }}</td>
       <td>{{ product.title }}</td>

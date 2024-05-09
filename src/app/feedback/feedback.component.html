@@ -1,4 +1,4 @@
-<form [formGroup]="messageForm">
+<!-- <form [formGroup]="messageForm">
   <label>Username: </label>
   <input formControlName="username" />
   <p *ngIf="contactForm.controls['username'].pristine">This username field has not been modified yet</p>
@@ -17,4 +17,10 @@
   <label>Message: </label>
   <textarea formControlName="message"></textarea>
   <button type="submit" (click)="onClick()">Submit</button>
-</form>
+</form> -->
+<ng-content select="h3"></ng-content>
+<h3>Content projection</h3>
+<ng-content select="#first"></ng-content>
+<p>Footer</p>
+<ng-content select="#second"></ng-content>
+<!-- Single Responsibility -- SOLID -->

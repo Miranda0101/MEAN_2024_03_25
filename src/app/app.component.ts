@@ -10,6 +10,8 @@ export class AppComponent {
   title = 'MEAN_2024_03_25';
   newNum = 10;
   newNums = [1, 2, 3]
+  bool1 = false;
+  bool2 = true;
   constructor(private router: Router){}
 
   gotoParent(){
