@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductsService } from './products.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-products',
@@ -14,10 +15,15 @@ export class ProductsComponent implements OnInit {
   yellow: boolean = false;
 
   keyword = '';
-  constructor(private dataService: ProductsService) { }
+  constructor(private dataService: ProductsService, private ar: ActivatedRoute) { }
 
   ngOnInit(): void {
+    console.log(this.ar.snapshot.queryParams)
+
+    this.ar.queryParamMap.subscribe((param)=>console.log(param))
+
   }
+
 
   getAllProducts(){
     this.products = this.dataService.getData;

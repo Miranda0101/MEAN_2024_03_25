@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -35,11 +36,15 @@ export class ProductsService {
   },
   ];
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
   get getData(){
     return this.$products;
   }
   set setData(value: any){
     this.$products = [...this.$products, value];
+  }
+
+  getDetail(id: string){
+    return this.http.get(`https://dummyjson.com/products/${id}`)
   }
 }
