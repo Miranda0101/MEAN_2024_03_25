@@ -1,16 +1,16 @@
 <!-- <app-home></app-home>
 <app-products></app-products> -->
 <!-- <app-parent [nums]="newNums" [num]="newNum"></app-parent> -->
-<button (click)="addOne()">Add 1</button>
+<!-- <button (click)="addOne()">Add 1</button>
 <button (click)="addItem()">Add item</button>
 <h1>Routing</h1>
 <button routerLink="home">Home</button>
 <button routerLink="products">Products</button>
-<button (click)="gotoParent()">Parent and Child</button>
+<button (click)="gotoParent()">Parent and Child</button> -->
 <!-- <router-outlet></router-outlet> -->
 <!-- <app-user></app-user>
 <app-feedback></app-feedback> -->
-<div class="my-container">Inside Normal div element</div>
+<!-- <div class="my-container">Inside Normal div element</div>
 <ng-container class="my-container">
   Inside ngContainer
   <h3 class="my-container">Title here</h3>
@@ -19,16 +19,16 @@
 <ng-template #example1> Inside ngTemplate 1 </ng-template>
 <ng-template #example2> Inside ngTemplate 2 </ng-template>
 <ng-template #example3> Inside ngTemplate 3 </ng-template>
-<div [ngTemplateOutlet]="bool1 ? example1 : bool2 ? example2 : example3"></div>
+<div [ngTemplateOutlet]="bool1 ? example1 : bool2 ? example2 : example3"></div> -->
 <!-- *ngIf -->
 <!-- <ng-template [ngIf]="conditions"></ng-template> -->
-
+<!-- 
 <app-feedback>
     <h3>From Parent </h3>
     <p id="first">First</p>
     <p id="second">Second</p>
     <p id="third">Third</p>
-</app-feedback>
+</app-feedback> -->
 
 <!-- Change Detection
 1. Default Strategy: always check for changes
@@ -37,3 +37,7 @@
     - User events 
     - Async pipe: {{ observable | async }}
 -->
+<h1>Counter: {{ countObs | async}}</h1>
+<button (click)="increment()">Increment</button>
+<button (click)="decrement()">Decrement</button>
+<button (click)="reset()">Reset</button>
